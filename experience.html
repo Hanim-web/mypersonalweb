@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>My Experience</title>
+</head>
+<body  background="image/wallpapergallery.jpg"> 
+<a name="top"></a>
+<a href="index.html"><img src="image/home.png"></a>  <a href="aboutme.html"><img src="image/biodata.png"></a>  <a href="experience.html"><img src="image/experience.png"></a>  <a href="education.html"><img src="image/education.png"></a>  <a href="family.html"><img src="image/family.png"></a>  <a href="gallery.html"><img src="image/gallery.png"></a> 
+<br>
+<hr size="4" width="200%" color="black">  
+<p align="center"><font face="Engravers MT"><font size="30"><font color="800000"><marquee>&#127924;MY EXPERIENCE&#127924;</marquee></font></p>
+<p><font face="Forte"><font size="15"><font color="2B1B17">Part Time Work as a Sales Girls</font></p>
+<ul type="circle">
+<img src="image/work.jpeg" width="250" height="300" border="4" vspace="15" hspace="15">              
+<img src="image/work2.jpeg" width="250" height="300" border="4" vspace="15" hspace="15">
+<li><p align="left"><font face="Elephant"><font size="5">Used to work part time before continuing my study at UITM.</font></p></li>
+<li><p align="left"><font face="Elephant"><font size="5">Worked as a sales girl at phone and accessories store.</font></p></li>
+<li><p align="left"><font face="Elephant"><font size="5">Worked for 6 months before started study.</font></p></li>
+<img src="image/work3.jpeg" width="250" height="300" border="4" vspace="15" hspace="15">
+<img src="image/work4.jpeg" width="250" height="300" border="4" vspace="15" hspace="15">
+
+<ul type="circle">
+<li><p align="left"><font face="Elephant"><font size="5">During semester breaks, I worked again at the same workplace about 2 months.</font></p></li>
+<li><p align="left"><font face="Elephant"><font size="5">While working there, I got to meet new people and make friends.</font></p></li>
+<li><p align="left"><font face="Elephant"><font size="5">I know how to handle and managed newly arrived stock, how to pair tempered glass and more.</font></p></li>
+<li><p align="left"><font face="Elephant"><font size="5">I learned a lot about phone and accessories from those who are more reliable.</font></p></li>
+</ul>
+<br>
+&#128608; &#128608; &#128608; &#128608; &#128608; &#128608; &#128608; &#128608; &#128608; &#128608; &#128608; &#128608; &#128608; &#128608; &#128608; &#128608; &#128608; &#128608; &#128608; &#128608; &#128608;
+<p align="right"><font face="Elephant"><font size="5">New accessories that I have learned.</font></p>
+<p align="right"><font size="5"><sub>Waterproof Pouch<sub>Allow you to take your smartphone while swimming, kayaking, snorkeling and more.</sub></p></font>
+<p align="right"><font size="5"><sub>Gimbals<sub>Allow you to take super steady videos even on phones that do not come with OIS.</sub></p></font>
+<p align="right"><font size="5"><sub>Multiport Wall Charger<sub>Multiple USB A ports and you can connect up to four devices.</sub></p></font>
+<br>
+<br>
+<hr size="2" width="200%" color="black">  
+<p align="left"<font face="Arial"><font size="8"><h2 style="background-color:#C9C0BB">Daily Routine at work</font></p></h2>
+<p align="left"><font size="5"><sup>10 a.m in the morning<sup>I will open the door because I hold the key</sup></p></font>
+<p align="left"><font size="5"><sup>2 p.m in the evening<sup>It is my lunch time including go to prayer</sup></p></font>
+<p align="left"><font size="5"><sup>6 a.m. in the evening<sup>Manage the new arrival stock</sup></p></font>
+<p align="left"><font size="5"><sup>9:30 in the night<sup>Get ready to close the shop and get a rest at home</sup></p></font>
+<b><p align="right"><font face="Elephant"><font size="8"><h2 style="background-color:#C9C0BB">Additional Photo</font></p></b></h2>  
+<i><p align="right"><font face="Arial"><font size="4">Click the images to view</font></p></i>
+<font face="constantia"><a href="image/work8.jpeg" width="240" height="20" vspace="15" hspace="15"><img src="image/work8.jpeg" width="240" align="right" height="220" vspace="15" hspace="15"></font></a>
+<p align="right"><a href="image/work6.jpeg" width="240" height="20" vspace="15" hspace="15"><img src="image/work6.jpeg" width="200" height="220" vspace="15" hspace="15"></a></p>
+<font face="constantia"><a href="image/work5.jpg" width="240" height="20" vspace="20" hspace="20"><img src="image/work5.jpeg" width="240" align="right" height="220"></font></a>
+<p align="right"><a href="image/work7.jpg" width="240" height="20" vspace="20" hspace="20"><img src="image/work7.jpg" width="200" height="220" vspace="20" hspace="20"></a></p>
+<p align="center">&#128617; &#128617; &#128617; &#128617; &#128617; &#128617; &#128617;</p>
+<p align="left"><font face="Elephant"><font size="6">WHAT TIME IS NOW ?</font></p>
+<canvas id="canvas" width="400" height="400"
+style="background-color:#333">
+</canvas>
+
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#333');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script>
+
+
+
+<p align="center"><font face="Arial"><font size="5">Wait... lets continue to other story &#128070;</font></p> 
+
+
+
+<a href="#top"><img src="image/top.png" width="40" height="40"</a>
+
+
+
+<div id="sfcwcfwnfcfgp945ex3wffzdn7ts89r9kdy"></div>
+<script type="text/javascript" src="https://counter6.stat.ovh/private/counter.js?c=wcfwnfcfgp945ex3wffzdn7ts89r9kdy&down=async" async></script>
+<noscript><a href="https://www.freecounterstat.com" title="free web counter">
+<img src="https://counter6.stat.ovh/private/freecounterstat.php?c=wcfwnfcfgp945ex3wffzdn7ts89r9kdy" border="0" title="free web counter" alt="free web counter">
+</a></noscript>
+
+
+
+
+</body>
+</html>
